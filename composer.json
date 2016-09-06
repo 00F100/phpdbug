@@ -1,0 +1,24 @@
+{
+    "name": "00f100/phpdbug",
+    "type": "package",
+    "version": "0.1.0",
+    "description": "Package to debug everything in PHP",
+    "keywords": ["php", "denbug"],
+    "homepage": "https://github.com/00f100/phpdbug",
+    "authors": [
+        {
+            "name": "João Moraes",
+            "email": "joaomoraesbr@gmail.com",
+            "homepage": "https://github.com/00f100"
+        }
+    ],
+    "require": {
+        "php": ">=5.5"
+    },
+    "autoload": {
+        "files": ["src/functions.php"],
+        "psr-4": {
+            "PHPdbug\\": "src/"
+        }
+    }
+}
