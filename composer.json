@@ -12,9 +12,6 @@
             "homepage": "https://github.com/00f100"
         }
     ],
-    "require": {
-        "php": ">=5.5"
-    },
     "autoload": {
         "files": ["src/functions.php"],
         "psr-4": {
