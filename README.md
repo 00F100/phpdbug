@@ -7,13 +7,13 @@ Installation
 
 Run on terminal:
 
-```
+```sh
 composer require 00f100/phpdbug
 ```
 
 Or add in your composer.json
 
-```
+```json
 "require-dev": {
     "00f100/phpdbug": "*"
 },
@@ -24,7 +24,7 @@ Usage
 
 Run in your code:
 
-```
+```php
 <?php
 
 $var = array(
