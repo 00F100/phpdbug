@@ -25,8 +25,6 @@ Usage
 Run in your code:
 
 ```php
-<?php
-
 $var = array(
    'foo' => 'bar'
 );
