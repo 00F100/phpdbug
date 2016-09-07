@@ -2,7 +2,7 @@
 
 Debug for PHP scripts
 
-Usage
+Installation
 --------------------
 
 Run on terminal:
@@ -17,4 +17,28 @@ Or add in your composer.json
 "require-dev": {
     "00f100/phpdbug": "*"
 },
+```
+
+Usage
+--------------------
+
+Run in your code:
+
+```
+<?php
+
+$var = array(
+   'foo' => 'bar'
+);
+
+// Force die
+debug($var);
+// or
+d($var);
+
+// Non-force die
+debug($var, false);
+// or
+d($var, false);
+
 ```
