@@ -20,7 +20,7 @@ namespace PHPdbug
                     $filename = $file['file'] . ':' . $file['line'];
                 }
                 $type = gettype($var);
-                if(php_sapi_name() == 'cli'){
+                if(php_sapi_name() == 'cli' || $_SERVER['HTTP_ACCEPT'] == 'application/json'){
                     echo "\n\n";
                     if($filename){
                         echo 'File: ' . $filename . "\n";
