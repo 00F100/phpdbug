@@ -2,7 +2,7 @@
 
 Debug for PHP scripts
 
-[![Total Downloads](https://poser.pugx.org/00F100/fcphp-autoload/downloads)](https://packagist.org/packages/00F100/fcphp-autoload)
+[![Total Downloads](https://poser.pugx.org/00F100/phpdbug/downloads)](https://packagist.org/packages/00F100/phpdbug)
 
 ## Installation
 --------------------
