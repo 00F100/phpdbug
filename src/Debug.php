@@ -10,7 +10,7 @@ namespace PHPdbug
 {
     class Debug
     {
-        public static function dump($var, $exit = true)
+        public static function dump($var, $exit = false, $save = false, $backtrace = false)
         {
             if(true){
                 $filename = false;
@@ -56,16 +56,18 @@ namespace PHPdbug
                         print_r($var);
                     }
                     echo '</blockquote><br>';
-                    echo 'Trace:';
-                    echo '<ul>';
-                    $debug_list = debug_backtrace();
-                    unset($debug_list[0]);
-                    foreach($debug_list as $debug){
-                        if(array_key_exists('file', $debug) && array_key_exists('line', $debug)){
-                            echo '<li>' . $debug['file'] . ':' . $debug['line'] . '</li>';
+                    if($backtrace) {
+                        echo 'Trace:';
+                        echo '<ul>';
+                        $debug_list = debug_backtrace();
+                        unset($debug_list[0]);
+                        foreach($debug_list as $debug){
+                            if(array_key_exists('file', $debug) && array_key_exists('line', $debug)){
+                                echo '<li>' . $debug['file'] . ':' . $debug['line'] . '</li>';
+                            }
                         }
+                        echo '</ul>';
                     }
-                    echo '</ul>';
                     echo '</pre><hr>';
                 }
             }
